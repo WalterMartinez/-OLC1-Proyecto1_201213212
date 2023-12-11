@@ -64,8 +64,14 @@ public class Lexer implements java_cup.runtime.Scanner {
   private static final int [] ZZ_CMAP_BLOCKS = zzUnpackcmap_blocks();
 
   private static final String ZZ_CMAP_BLOCKS_PACKED_0 =
-    "\11\0\2\1\1\2\2\1\22\0\1\1\17\0\12\3"+
-    "\113\0\1\2\u01a2\0\2\2\326\0\u0100\2";
+    "\11\0\1\1\1\2\1\3\1\4\1\5\22\0\1\6"+
+    "\1\7\1\10\5\0\1\11\1\12\1\13\1\14\1\15"+
+    "\1\16\1\17\1\20\12\21\1\22\1\23\1\24\1\0"+
+    "\1\25\1\26\1\0\2\27\1\30\6\27\1\31\3\27"+
+    "\1\32\1\33\13\27\1\0\1\34\2\0\1\35\1\0"+
+    "\2\27\1\30\6\27\1\31\3\27\1\32\1\33\13\27"+
+    "\1\36\1\37\1\40\1\41\6\0\1\3\u01a2\0\2\3"+
+    "\326\0\u0100\3";
 
   private static int [] zzUnpackcmap_blocks() {
     int [] result = new int[1024];
@@ -92,10 +98,14 @@ public class Lexer implements java_cup.runtime.Scanner {
   private static final int [] ZZ_ACTION = zzUnpackAction();
 
   private static final String ZZ_ACTION_PACKED_0 =
-    "\1\0\1\1\1\2\1\3";
+    "\1\0\1\1\1\2\1\1\1\3\1\4\1\5\1\6"+
+    "\1\7\1\10\1\11\1\1\1\12\1\13\1\14\1\1"+
+    "\1\15\2\16\1\17\1\20\1\21\1\22\1\0\1\23"+
+    "\1\0\1\24\3\0\1\16\1\23\2\25\1\26\1\0"+
+    "\1\16\2\0\1\27\1\0\1\25";
 
   private static int [] zzUnpackAction() {
-    int [] result = new int[4];
+    int [] result = new int[42];
     int offset = 0;
     offset = zzUnpackAction(ZZ_ACTION_PACKED_0, offset, result);
     return result;
@@ -120,10 +130,15 @@ public class Lexer implements java_cup.runtime.Scanner {
   private static final int [] ZZ_ROWMAP = zzUnpackRowMap();
 
   private static final String ZZ_ROWMAP_PACKED_0 =
-    "\0\0\0\4\0\4\0\10";
+    "\0\0\0\42\0\42\0\104\0\42\0\42\0\42\0\42"+
+    "\0\42\0\146\0\42\0\210\0\252\0\42\0\42\0\314"+
+    "\0\42\0\356\0\u0110\0\42\0\42\0\42\0\42\0\104"+
+    "\0\42\0\u0132\0\42\0\u0154\0\u0176\0\u0198\0\u01ba\0\104"+
+    "\0\42\0\u01dc\0\u0176\0\u01fe\0\u0220\0\u0242\0\u0264\0\356"+
+    "\0\u0286\0\u0286";
 
   private static int [] zzUnpackRowMap() {
-    int [] result = new int[4];
+    int [] result = new int[42];
     int offset = 0;
     offset = zzUnpackRowMap(ZZ_ROWMAP_PACKED_0, offset, result);
     return result;
@@ -146,10 +161,24 @@ public class Lexer implements java_cup.runtime.Scanner {
   private static final int [] ZZ_TRANS = zzUnpacktrans();
 
   private static final String ZZ_TRANS_PACKED_0 =
-    "\1\2\1\3\1\0\1\4\7\0\1\4";
+    "\1\2\2\3\1\0\3\3\1\2\1\4\1\5\1\6"+
+    "\1\7\1\10\1\11\1\12\1\13\1\14\1\15\1\16"+
+    "\1\17\1\20\1\2\1\21\1\22\1\23\3\22\2\2"+
+    "\1\24\1\25\1\26\1\27\42\0\2\30\1\0\5\30"+
+    "\1\31\23\30\1\32\5\30\25\0\1\33\34\0\1\34"+
+    "\40\0\1\35\1\0\1\15\27\0\1\36\53\0\1\22"+
+    "\5\0\5\22\1\0\1\22\25\0\1\22\5\0\4\22"+
+    "\1\37\1\0\1\22\4\0\2\30\1\0\5\30\1\40"+
+    "\23\30\1\32\5\30\2\34\1\41\2\0\1\42\34\34"+
+    "\6\0\1\43\12\0\1\43\15\0\1\43\2\0\7\36"+
+    "\1\44\32\36\21\0\1\22\5\0\3\22\1\45\1\22"+
+    "\1\0\1\22\6\0\1\41\37\0\7\46\1\47\15\46"+
+    "\1\41\14\46\21\0\1\22\5\0\2\22\1\50\2\22"+
+    "\1\0\1\22\4\0\7\36\1\44\15\36\1\51\23\36"+
+    "\1\44\15\36\1\52\14\36\25\0\1\46\14\0";
 
   private static int [] zzUnpacktrans() {
-    int [] result = new int[12];
+    int [] result = new int[680];
     int offset = 0;
     offset = zzUnpacktrans(ZZ_TRANS_PACKED_0, offset, result);
     return result;
@@ -192,10 +221,13 @@ public class Lexer implements java_cup.runtime.Scanner {
   private static final int [] ZZ_ATTRIBUTE = zzUnpackAttribute();
 
   private static final String ZZ_ATTRIBUTE_PACKED_0 =
-    "\1\0\2\11\1\1";
+    "\1\0\2\11\1\1\5\11\1\1\1\11\2\1\2\11"+
+    "\1\1\1\11\2\1\4\11\1\0\1\11\1\0\1\11"+
+    "\3\0\2\1\1\11\2\1\1\0\1\1\2\0\1\1"+
+    "\1\0\1\1";
 
   private static int [] zzUnpackAttribute() {
-    int [] result = new int[4];
+    int [] result = new int[42];
     int offset = 0;
     offset = zzUnpackAttribute(ZZ_ATTRIBUTE_PACKED_0, offset, result);
     return result;
@@ -702,17 +734,137 @@ public class Lexer implements java_cup.runtime.Scanner {
             { System.out.println("Error Lexico: " + yytext() + " | Fila:" + yyline + " | Columna: " + yycolumn);
             }
           // fall through
-          case 4: break;
+          case 24: break;
           case 2:
             { /* Espacios en blanco se ignoran */
             }
           // fall through
-          case 5: break;
+          case 25: break;
           case 3:
-            { return new Symbol(sym.ENTERO, yycolumn, yyline, yytext());
+            { func.Funcion.lista.add(new Symbol(sym.PARIZQ,yycolumn,yyline, yytext()));
+        return new Symbol(sym.PARIZQ,yycolumn,yyline, yytext());
             }
           // fall through
-          case 6: break;
+          case 26: break;
+          case 4:
+            { func.Funcion.lista.add(new Symbol(sym.PARDER,yycolumn,yyline, yytext()));
+        return new Symbol(sym.PARDER,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 27: break;
+          case 5:
+            { func.Funcion.lista.add(new Symbol(sym.CEROOMAS,yycolumn,yyline, yytext()));
+        return new Symbol(sym.CEROOMAS,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 28: break;
+          case 6:
+            { func.Funcion.lista.add(new Symbol(sym.UNOOMAS,yycolumn,yyline, yytext()));
+        return new Symbol(sym.UNOOMAS,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 29: break;
+          case 7:
+            { func.Funcion.lista.add(new Symbol(sym.COMA,yycolumn,yyline, yytext()));
+        return new Symbol(sym.COMA,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 30: break;
+          case 8:
+            { func.Funcion.lista.add(new Symbol(sym.GUION,yycolumn,yyline, yytext()));
+        return new Symbol(sym.GUION,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 31: break;
+          case 9:
+            { func.Funcion.lista.add(new Symbol(sym.CONCA,yycolumn,yyline, yytext()));
+        return new Symbol(sym.CONCA,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 32: break;
+          case 10:
+            { func.Funcion.lista.add(new Symbol(sym.ENTERO,yycolumn,yyline, yytext()));
+            return new Symbol(sym.ENTERO, yycolumn, yyline, yytext());
+            }
+          // fall through
+          case 33: break;
+          case 11:
+            { func.Funcion.lista.add(new Symbol(sym.DOSPUNTOS,yycolumn,yyline, yytext()));
+        return new Symbol(sym.DOSPUNTOS,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 34: break;
+          case 12:
+            { func.Funcion.lista.add(new Symbol(sym.PTOCOMA,yycolumn,yyline, yytext()));
+        return new Symbol(sym.PTOCOMA,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 35: break;
+          case 13:
+            { func.Funcion.lista.add(new Symbol(sym.CEROOUNA,yycolumn,yyline, yytext()));
+        return new Symbol(sym.CEROOUNA,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 36: break;
+          case 14:
+            { func.Funcion.lista.add(new Symbol(sym.IDENTI,yycolumn,yyline, yytext()));
+            return new Symbol(sym.IDENTI,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 37: break;
+          case 15:
+            { func.Funcion.lista.add(new Symbol(sym.LLAVEIZQ,yycolumn,yyline, yytext()));
+        return new Symbol(sym.LLAVEIZQ,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 38: break;
+          case 16:
+            { func.Funcion.lista.add(new Symbol(sym.DISYUNCION,yycolumn,yyline, yytext()));
+        return new Symbol(sym.DISYUNCION,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 39: break;
+          case 17:
+            { func.Funcion.lista.add(new Symbol(sym.LLAVEDER,yycolumn,yyline, yytext()));
+        return new Symbol(sym.LLAVEDER,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 40: break;
+          case 18:
+            { func.Funcion.lista.add(new Symbol(sym.TILDE,yycolumn,yyline, yytext()));
+        return new Symbol(sym.TILDE,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 41: break;
+          case 19:
+            { func.Funcion.lista.add(new Symbol(sym.CADENA,yycolumn,yyline, yytext()));
+                        return new Symbol(sym.CADENA,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 42: break;
+          case 20:
+            { func.Funcion.lista.add(new Symbol(sym.FLECHA,yycolumn,yyline, yytext()));
+        return new Symbol(sym.FLECHA,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 43: break;
+          case 21:
+            { System.out.println(yytext());
+            }
+          // fall through
+          case 44: break;
+          case 22:
+            { func.Funcion.lista.add(new Symbol(sym.DECIMAL,yycolumn,yyline, yytext()));
+            return new Symbol(sym.DECIMAL,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 45: break;
+          case 23:
+            { func.Funcion.lista.add(new Symbol(sym.RCONJ,yycolumn,yyline, yytext()));
+        return new Symbol(sym.RCONJ,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 46: break;
           default:
             zzScanError(ZZ_NO_MATCH);
         }

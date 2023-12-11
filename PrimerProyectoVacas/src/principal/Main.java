@@ -5,6 +5,7 @@
 package principal;
 
 import Interfaz.Principal;
+import java.io.StringReader;
 
 /**
  *
@@ -19,11 +20,34 @@ public class Main {
         // TODO code application logic here
         //func.Funcion.mostrar("hola mundo");
         
-        //analizadores("src/analizadores/", "Lexer.jflex", "Parser.cup");
+        analizadores("src/analizadores/", "Lexer.jflex", "Parser.cup");
+        
         Principal p = new Principal();
         p.setVisible(true);
         
+        String entrada = """
+                       {
+                       // CONJUNTOS
+                       CONJ: letra -> a~z;
+                       CONJ: letraMayus -> A~Z;
+                       CONJ: digito -> 0-9;
+                       CONJ: bool -> 0,1;
+                       CONJ: op -> *~/;
+                       
+                       //expresiones
+                       nombre -> +..(letraMayus)*(letra)_;
+                       int -> ..int;
+                       float-> ...(digito)*(digito)".".(digito)*(digito);
+                       entero->.(digito)*(digito);
+                       binario-> .(bool)*(bool);
+                       compi -> ....compi1;
+                       binfloat ->...(bool)*(bool)".".(bool)*(bool);
+                       or ->||.c1.c2.c3;
+                       
+                       }
+                       """;
         
+        //analizar(entrada);
         
         
     }
@@ -41,5 +65,17 @@ public class Main {
             System.out.println(e);
         }
     }
+    
+        // Realizar Analisis
+    public static void analizar (String entrada){
+        try {
+            analizadores.Lexer lexer = new analizadores.Lexer(new StringReader(entrada)); 
+            analizadores.Parser parser = new analizadores.Parser(lexer);
+            parser.parse();
+        } catch (Exception e) {
+            System.out.println("Error fatal en compilación de entrada.");
+            System.out.println(e);
+        } 
+    } 
     
 }

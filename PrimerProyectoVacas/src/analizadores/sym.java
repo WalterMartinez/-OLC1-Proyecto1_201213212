@@ -8,13 +8,51 @@ package analizadores;
 /** CUP generated class containing symbol constants. */
 public class sym {
   /* terminals */
-  public static final int error = 1;
+  public static final int GUION = 21;
+  public static final int DOSPUNTOS = 7;
+  public static final int CADENA = 5;
+  public static final int IDENTI = 3;
+  public static final int DECIMAL = 4;
+  public static final int RCONJ = 6;
+  public static final int PARIZQ = 18;
+  public static final int FLECHA = 8;
+  public static final int PARDER = 17;
+  public static final int CEROOMAS = 14;
+  public static final int TILDE = 11;
+  public static final int LLAVEIZQ = 20;
+  public static final int COMA = 10;
+  public static final int LLAVEDER = 19;
   public static final int EOF = 0;
+  public static final int CEROOUNA = 16;
+  public static final int DISYUNCION = 13;
+  public static final int CONCA = 12;
+  public static final int error = 1;
+  public static final int PTOCOMA = 9;
   public static final int ENTERO = 2;
+  public static final int UNOOMAS = 15;
   public static final String[] terminalNames = new String[] {
   "EOF",
   "error",
-  "ENTERO"
+  "ENTERO",
+  "IDENTI",
+  "DECIMAL",
+  "CADENA",
+  "RCONJ",
+  "DOSPUNTOS",
+  "FLECHA",
+  "PTOCOMA",
+  "COMA",
+  "TILDE",
+  "CONCA",
+  "DISYUNCION",
+  "CEROOMAS",
+  "UNOOMAS",
+  "CEROOUNA",
+  "PARDER",
+  "PARIZQ",
+  "LLAVEDER",
+  "LLAVEIZQ",
+  "GUION"
   };
 }
 

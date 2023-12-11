@@ -4,15 +4,22 @@
  */
 package func;
 
+import java.util.LinkedList;
+
 /**
  *
  * @author walte
  */
 public class Funcion {
+    public static LinkedList lista = new LinkedList();
     public static void mostrar(String mensaje){
         System.out.println(mensaje);
     }
-            
+     public void imprimirlista(){
+        for (Object lista1 : lista) {
+            System.out.println(lista1);
+                    }
+     }        
             
     
 }
