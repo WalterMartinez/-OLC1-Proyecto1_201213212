@@ -15,6 +15,7 @@ public class sym {
   public static final int DECIMAL = 4;
   public static final int RCONJ = 6;
   public static final int PARIZQ = 18;
+  public static final int BARRA = 22;
   public static final int FLECHA = 8;
   public static final int PARDER = 17;
   public static final int CEROOMAS = 14;
@@ -52,7 +53,8 @@ public class sym {
   "PARIZQ",
   "LLAVEDER",
   "LLAVEIZQ",
-  "GUION"
+  "GUION",
+  "BARRA"
   };
 }
 

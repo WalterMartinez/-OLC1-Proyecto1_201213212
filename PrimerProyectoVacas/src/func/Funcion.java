@@ -4,6 +4,9 @@
  */
 package func;
 
+import Utilidades.rtokens;
+import java.awt.List;
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 /**
@@ -12,14 +15,21 @@ import java.util.LinkedList;
  */
 public class Funcion {
     public static LinkedList lista = new LinkedList();
+
+    /**
+     *
+     */
+   
+
     public static void mostrar(String mensaje){
         System.out.println(mensaje);
     }
-     public void imprimirlista(){
-        for (Object lista1 : lista) {
-            System.out.println(lista1);
+     public static void imprimirlista(){
+        for (Object elemento : lista) {
+            System.out.println("---- "+elemento+" ------");
+            System.out.println("");
                     }
      }        
             
-    
+ 
 }

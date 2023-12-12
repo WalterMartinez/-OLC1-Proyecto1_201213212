@@ -37,6 +37,7 @@ CADENACOMILLASDOBLES = [\"]([^\"\n]|(\\\"))*[\"]
                         return new Symbol(sym.CADENA,yycolumn,yyline, yytext());}
 
 "CONJ"  {func.Funcion.lista.add(new Symbol(sym.RCONJ,yycolumn,yyline, yytext()));
+        
         return new Symbol(sym.RCONJ,yycolumn,yyline, yytext());}
 ":"     {func.Funcion.lista.add(new Symbol(sym.DOSPUNTOS,yycolumn,yyline, yytext()));
         return new Symbol(sym.DOSPUNTOS,yycolumn,yyline, yytext());}
@@ -72,6 +73,10 @@ CADENACOMILLASDOBLES = [\"]([^\"\n]|(\\\"))*[\"]
 
 "-"     {func.Funcion.lista.add(new Symbol(sym.GUION,yycolumn,yyline, yytext()));
         return new Symbol(sym.GUION,yycolumn,yyline, yytext());}
+
+"/"     {func.Funcion.lista.add(new Symbol(sym.BARRA,yycolumn,yyline, yytext()));
+        return new Symbol(sym.BARRA,yycolumn,yyline, yytext());}
+
 
 
 

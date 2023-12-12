@@ -5,6 +5,8 @@
 package principal;
 
 import Interfaz.Principal;
+import static Utilidades.Itokens.listatokens;
+import Utilidades.rtokens;
 import java.io.StringReader;
 
 /**
@@ -20,7 +22,7 @@ public class Main {
         // TODO code application logic here
         //func.Funcion.mostrar("hola mundo");
         
-        analizadores("src/analizadores/", "Lexer.jflex", "Parser.cup");
+        //analizadores("src/analizadores/", "Lexer.jflex", "Parser.cup");
         
         Principal p = new Principal();
         p.setVisible(true);
@@ -47,8 +49,8 @@ public class Main {
                        }
                        """;
         
-        //analizar(entrada);
-        
+        analizar(entrada); 
+        //Utilidades.Itokens.listatokens.add(new rtokens("hola", "mundo",1,2));
         
     }
     
