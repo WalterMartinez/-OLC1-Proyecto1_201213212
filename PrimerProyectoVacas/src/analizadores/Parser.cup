@@ -41,7 +41,8 @@ terminal String GUION, BARRA;
 
 //------> Declaración de no terminales
 non terminal inicio;
-
+non terminal contenido;
+non terminal sentencias, declaracion, conjunto, varconj, varcomauno, varcomados, exregular;
 
 //------> Definir Simbolo Inicial
 start with inicio; 
@@ -49,5 +50,34 @@ start with inicio;
 
 // ------------>  Producciones  <------------
 
-inicio ::= ENTERO
+inicio ::= LLAVEIZQ contenido LLAVEDER
 ;
+
+contenido ::= sentencias
+;
+
+sentencias ::=  sentencias declaracion
+                | declaracion
+;
+
+declaracion ::= conjunto
+                | exregular
+;
+
+conjunto ::=    RCONJ DOSPUNTOS IDENTI FLECHA varconj PTOCOMA
+;
+
+varconj ::= IDENTI TILDE IDENTI
+            |ENTERO GUION ENTERO
+            | varcomauno
+            | varcomados
+;
+
+varcomauno ::=  varcomauno COMA IDENTI
+                |IDENTI
+;
+
+varcomados ::=  varcomados COMA ENTERO
+                |ENTERO
+;
+

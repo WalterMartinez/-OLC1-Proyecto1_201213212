@@ -9,10 +9,10 @@ package Utilidades;
  * @author walte
  */
 public class rtokens {
-    private String lexema;
-    private String token;
-    private int linea;
-    private int columna;
+    public String lexema;
+    public String token;
+    public int linea;
+    public int columna;
     
     public rtokens(String lexema, String token, int linea, int columna){
         this.lexema = lexema;
@@ -20,36 +20,8 @@ public class rtokens {
         this.linea = linea;
         this.columna = columna;
     }
-    public String getLexema() {
-        return lexema;
-    }
-
-    public void setLexema(String lexema) {
-        this.lexema = lexema;
-    }
-    
-    public String getToken() {
-        return token;
-    }
-
-    public void setToken(String token) {
-        this.token = token;
-    }
-    
-     public int getLinea() {
-        return linea;
-    }
-
-    public void setLinea(int linea) {
-        this.linea = linea;
-    }
-    
-    public int getColumna() {
-        return columna;
-    }
-
-    public void setColumna(int columna) {
-        this.columna = columna;
-    }
-    
+    @Override
+    public String toString(){
+    return this.lexema + " - " + this.token + " - " + this.linea + " - "+ this.columna;
+        }
 }

@@ -741,115 +741,115 @@ public class Lexer implements java_cup.runtime.Scanner {
           // fall through
           case 26: break;
           case 3:
-            { func.Funcion.lista.add(new Symbol(sym.PARIZQ,yycolumn,yyline, yytext()));
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo (",yyline,yycolumn));
         return new Symbol(sym.PARIZQ,yycolumn,yyline, yytext());
             }
           // fall through
           case 27: break;
           case 4:
-            { func.Funcion.lista.add(new Symbol(sym.PARDER,yycolumn,yyline, yytext()));
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo )",yyline,yycolumn));
         return new Symbol(sym.PARDER,yycolumn,yyline, yytext());
             }
           // fall through
           case 28: break;
           case 5:
-            { func.Funcion.lista.add(new Symbol(sym.CEROOMAS,yycolumn,yyline, yytext()));
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo *",yyline,yycolumn));
         return new Symbol(sym.CEROOMAS,yycolumn,yyline, yytext());
             }
           // fall through
           case 29: break;
           case 6:
-            { func.Funcion.lista.add(new Symbol(sym.UNOOMAS,yycolumn,yyline, yytext()));
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo +",yyline,yycolumn));
         return new Symbol(sym.UNOOMAS,yycolumn,yyline, yytext());
             }
           // fall through
           case 30: break;
           case 7:
-            { func.Funcion.lista.add(new Symbol(sym.COMA,yycolumn,yyline, yytext()));
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo ,",yyline,yycolumn));
         return new Symbol(sym.COMA,yycolumn,yyline, yytext());
             }
           // fall through
           case 31: break;
           case 8:
-            { func.Funcion.lista.add(new Symbol(sym.GUION,yycolumn,yyline, yytext()));
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo -",yyline,yycolumn));
         return new Symbol(sym.GUION,yycolumn,yyline, yytext());
             }
           // fall through
           case 32: break;
           case 9:
-            { func.Funcion.lista.add(new Symbol(sym.CONCA,yycolumn,yyline, yytext()));
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo .",yyline,yycolumn));
         return new Symbol(sym.CONCA,yycolumn,yyline, yytext());
             }
           // fall through
           case 33: break;
           case 10:
-            { func.Funcion.lista.add(new Symbol(sym.BARRA,yycolumn,yyline, yytext()));
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo /",yyline,yycolumn));
         return new Symbol(sym.BARRA,yycolumn,yyline, yytext());
             }
           // fall through
           case 34: break;
           case 11:
-            { func.Funcion.lista.add(new Symbol(sym.ENTERO,yycolumn,yyline, yytext()));
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Digito",yyline,yycolumn));
             return new Symbol(sym.ENTERO, yycolumn, yyline, yytext());
             }
           // fall through
           case 35: break;
           case 12:
-            { func.Funcion.lista.add(new Symbol(sym.DOSPUNTOS,yycolumn,yyline, yytext()));
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo :",yyline,yycolumn));
         return new Symbol(sym.DOSPUNTOS,yycolumn,yyline, yytext());
             }
           // fall through
           case 36: break;
           case 13:
-            { func.Funcion.lista.add(new Symbol(sym.PTOCOMA,yycolumn,yyline, yytext()));
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo ;",yyline,yycolumn));
         return new Symbol(sym.PTOCOMA,yycolumn,yyline, yytext());
             }
           // fall through
           case 37: break;
           case 14:
-            { func.Funcion.lista.add(new Symbol(sym.CEROOUNA,yycolumn,yyline, yytext()));
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo ?",yyline,yycolumn));
         return new Symbol(sym.CEROOUNA,yycolumn,yyline, yytext());
             }
           // fall through
           case 38: break;
           case 15:
-            { func.Funcion.lista.add(new Symbol(sym.IDENTI,yycolumn,yyline, yytext()));
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Identificador",yyline,yycolumn));
             return new Symbol(sym.IDENTI,yycolumn,yyline, yytext());
             }
           // fall through
           case 39: break;
           case 16:
-            { func.Funcion.lista.add(new Symbol(sym.LLAVEIZQ,yycolumn,yyline, yytext()));
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo {",yyline,yycolumn));
         return new Symbol(sym.LLAVEIZQ,yycolumn,yyline, yytext());
             }
           // fall through
           case 40: break;
           case 17:
-            { func.Funcion.lista.add(new Symbol(sym.DISYUNCION,yycolumn,yyline, yytext()));
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo |",yyline,yycolumn));
         return new Symbol(sym.DISYUNCION,yycolumn,yyline, yytext());
             }
           // fall through
           case 41: break;
           case 18:
-            { func.Funcion.lista.add(new Symbol(sym.LLAVEDER,yycolumn,yyline, yytext()));
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo }",yyline,yycolumn));
         return new Symbol(sym.LLAVEDER,yycolumn,yyline, yytext());
             }
           // fall through
           case 42: break;
           case 19:
-            { func.Funcion.lista.add(new Symbol(sym.TILDE,yycolumn,yyline, yytext()));
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo ~",yyline,yycolumn));
         return new Symbol(sym.TILDE,yycolumn,yyline, yytext());
             }
           // fall through
           case 43: break;
           case 20:
-            { func.Funcion.lista.add(new Symbol(sym.CADENA,yycolumn,yyline, yytext()));
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Cadena",yyline,yycolumn));
                         return new Symbol(sym.CADENA,yycolumn,yyline, yytext());
             }
           // fall through
           case 44: break;
           case 21:
-            { func.Funcion.lista.add(new Symbol(sym.FLECHA,yycolumn,yyline, yytext()));
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo ->",yyline,yycolumn));
         return new Symbol(sym.FLECHA,yycolumn,yyline, yytext());
             }
           // fall through
@@ -860,14 +860,13 @@ public class Lexer implements java_cup.runtime.Scanner {
           // fall through
           case 46: break;
           case 23:
-            { func.Funcion.lista.add(new Symbol(sym.DECIMAL,yycolumn,yyline, yytext()));
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Decimal",yyline,yycolumn));
             return new Symbol(sym.DECIMAL,yycolumn,yyline, yytext());
             }
           // fall through
           case 47: break;
           case 24:
-            { func.Funcion.lista.add(new Symbol(sym.RCONJ,yycolumn,yyline, yytext()));
-        Utilidades.Itokens.listatokens.add(new rtokens(yytext(), "RCONJ",yyline,yycolumn));
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Palabra res CONJ",yyline,yycolumn));    
         return new Symbol(sym.RCONJ,yycolumn,yyline, yytext());
             }
           // fall through

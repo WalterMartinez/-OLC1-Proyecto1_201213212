@@ -33,60 +33,59 @@ CADENACOMILLASDOBLES = [\"]([^\"\n]|(\\\"))*[\"]
 // ------------  Reglas Lexicas -------------------
 {COMENTARIO}            {System.out.println(yytext());}
 {COMENTMULTILINEA}      {System.out.println(yytext());}
-{CADENACOMILLASDOBLES}  {func.Funcion.lista.add(new Symbol(sym.CADENA,yycolumn,yyline, yytext()));
+{CADENACOMILLASDOBLES}  {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Cadena",yyline,yycolumn));
                         return new Symbol(sym.CADENA,yycolumn,yyline, yytext());}
 
-"CONJ"  {func.Funcion.lista.add(new Symbol(sym.RCONJ,yycolumn,yyline, yytext()));
-        
+"CONJ"  {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Palabra res CONJ",yyline,yycolumn));    
         return new Symbol(sym.RCONJ,yycolumn,yyline, yytext());}
-":"     {func.Funcion.lista.add(new Symbol(sym.DOSPUNTOS,yycolumn,yyline, yytext()));
+":"     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo :",yyline,yycolumn));
         return new Symbol(sym.DOSPUNTOS,yycolumn,yyline, yytext());}
-"->"    {func.Funcion.lista.add(new Symbol(sym.FLECHA,yycolumn,yyline, yytext()));
+"->"    {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo ->",yyline,yycolumn));
         return new Symbol(sym.FLECHA,yycolumn,yyline, yytext());}
-";"     {func.Funcion.lista.add(new Symbol(sym.PTOCOMA,yycolumn,yyline, yytext()));
+";"     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo ;",yyline,yycolumn));
         return new Symbol(sym.PTOCOMA,yycolumn,yyline, yytext());}
-","     {func.Funcion.lista.add(new Symbol(sym.COMA,yycolumn,yyline, yytext()));
+","     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo ,",yyline,yycolumn));
         return new Symbol(sym.COMA,yycolumn,yyline, yytext());}
 
 
-"~"     {func.Funcion.lista.add(new Symbol(sym.TILDE,yycolumn,yyline, yytext()));
+"~"     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo ~",yyline,yycolumn));
         return new Symbol(sym.TILDE,yycolumn,yyline, yytext());}
-"."     {func.Funcion.lista.add(new Symbol(sym.CONCA,yycolumn,yyline, yytext()));
+"."     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo .",yyline,yycolumn));
         return new Symbol(sym.CONCA,yycolumn,yyline, yytext());}
-"|"     {func.Funcion.lista.add(new Symbol(sym.DISYUNCION,yycolumn,yyline, yytext()));
+"|"     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo |",yyline,yycolumn));
         return new Symbol(sym.DISYUNCION,yycolumn,yyline, yytext());}
-"*"     {func.Funcion.lista.add(new Symbol(sym.CEROOMAS,yycolumn,yyline, yytext()));
+"*"     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo *",yyline,yycolumn));
         return new Symbol(sym.CEROOMAS,yycolumn,yyline, yytext());}
-"+"     {func.Funcion.lista.add(new Symbol(sym.UNOOMAS,yycolumn,yyline, yytext()));
+"+"     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo +",yyline,yycolumn));
         return new Symbol(sym.UNOOMAS,yycolumn,yyline, yytext());}
-"?"     {func.Funcion.lista.add(new Symbol(sym.CEROOUNA,yycolumn,yyline, yytext()));
+"?"     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo ?",yyline,yycolumn));
         return new Symbol(sym.CEROOUNA,yycolumn,yyline, yytext());}
 
-"("     {func.Funcion.lista.add(new Symbol(sym.PARIZQ,yycolumn,yyline, yytext()));
+"("     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo (",yyline,yycolumn));
         return new Symbol(sym.PARIZQ,yycolumn,yyline, yytext());}
-")"     {func.Funcion.lista.add(new Symbol(sym.PARDER,yycolumn,yyline, yytext()));
+")"     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo )",yyline,yycolumn));
         return new Symbol(sym.PARDER,yycolumn,yyline, yytext());}
-"{"     {func.Funcion.lista.add(new Symbol(sym.LLAVEIZQ,yycolumn,yyline, yytext()));
+"{"     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo {",yyline,yycolumn));
         return new Symbol(sym.LLAVEIZQ,yycolumn,yyline, yytext());}
-"}"     {func.Funcion.lista.add(new Symbol(sym.LLAVEDER,yycolumn,yyline, yytext()));
+"}"     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo }",yyline,yycolumn));
         return new Symbol(sym.LLAVEDER,yycolumn,yyline, yytext());}
 
-"-"     {func.Funcion.lista.add(new Symbol(sym.GUION,yycolumn,yyline, yytext()));
+"-"     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo -",yyline,yycolumn));
         return new Symbol(sym.GUION,yycolumn,yyline, yytext());}
 
-"/"     {func.Funcion.lista.add(new Symbol(sym.BARRA,yycolumn,yyline, yytext()));
+"/"     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo /",yyline,yycolumn));
         return new Symbol(sym.BARRA,yycolumn,yyline, yytext());}
 
 
 
 
-{IDENTI}    {func.Funcion.lista.add(new Symbol(sym.IDENTI,yycolumn,yyline, yytext()));
+{IDENTI}    {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Identificador",yyline,yycolumn));
             return new Symbol(sym.IDENTI,yycolumn,yyline, yytext());
             }
-{D}         {func.Funcion.lista.add(new Symbol(sym.ENTERO,yycolumn,yyline, yytext()));
+{D}         {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Digito",yyline,yycolumn));
             return new Symbol(sym.ENTERO, yycolumn, yyline, yytext()); 
             }
-{DD}        {func.Funcion.lista.add(new Symbol(sym.DECIMAL,yycolumn,yyline, yytext()));
+{DD}        {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Decimal",yyline,yycolumn));
             return new Symbol(sym.DECIMAL,yycolumn,yyline, yytext());
             }
 

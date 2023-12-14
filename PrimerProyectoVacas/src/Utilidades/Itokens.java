@@ -7,19 +7,12 @@ package Utilidades;
 import java.awt.List;
 import java.util.ArrayList;
 import Utilidades.rtokens;
+import java.util.LinkedList;
 /**
  *
  * @author walte
  */
 public class Itokens {
-   public static ArrayList listatokens = new ArrayList();
-   
-   public void mostrarlista (){
-   for( Object elemento : listatokens){
-       System.out.println("Lexema "+elemento+ " ");
-   
-   
-   }
-   
-   }
+   public static LinkedList<rtokens> listatokens = new LinkedList<>();
+    
 }
