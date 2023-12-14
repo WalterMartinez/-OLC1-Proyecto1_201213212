@@ -65,13 +65,13 @@ public class Lexer implements java_cup.runtime.Scanner {
 
   private static final String ZZ_CMAP_BLOCKS_PACKED_0 =
     "\11\0\1\1\1\2\1\3\1\4\1\5\22\0\1\6"+
-    "\1\7\1\10\5\0\1\11\1\12\1\13\1\14\1\15"+
-    "\1\16\1\17\1\20\12\21\1\22\1\23\1\24\1\0"+
-    "\1\25\1\26\1\0\2\27\1\30\6\27\1\31\3\27"+
-    "\1\32\1\33\13\27\1\0\1\34\2\0\1\35\1\0"+
-    "\2\27\1\30\6\27\1\31\3\27\1\32\1\33\13\27"+
-    "\1\36\1\37\1\40\1\41\6\0\1\3\u01a2\0\2\3"+
-    "\326\0\u0100\3";
+    "\1\7\1\10\1\11\1\12\1\13\1\14\1\15\1\16"+
+    "\1\17\1\20\1\21\1\22\1\23\1\24\1\25\12\26"+
+    "\1\27\1\30\1\31\1\32\1\33\1\34\1\35\2\36"+
+    "\1\37\6\36\1\40\3\36\1\41\1\42\13\36\1\43"+
+    "\1\44\1\45\1\46\1\47\1\50\2\36\1\37\6\36"+
+    "\1\40\3\36\1\41\1\42\13\36\1\51\1\52\1\53"+
+    "\1\54\6\0\1\3\u01a2\0\2\3\326\0\u0100\3";
 
   private static int [] zzUnpackcmap_blocks() {
     int [] result = new int[1024];
@@ -98,14 +98,16 @@ public class Lexer implements java_cup.runtime.Scanner {
   private static final int [] ZZ_ACTION = zzUnpackAction();
 
   private static final String ZZ_ACTION_PACKED_0 =
-    "\1\0\1\1\1\2\1\1\1\3\1\4\1\5\1\6"+
-    "\1\7\1\10\1\11\1\12\1\13\1\14\1\15\1\1"+
-    "\1\16\2\17\1\20\1\21\1\22\1\23\1\0\1\24"+
-    "\1\0\1\25\3\0\1\17\1\24\2\26\1\27\1\0"+
-    "\1\17\2\0\1\30\1\0\1\26";
+    "\1\0\1\1\1\2\1\3\1\4\1\5\1\6\1\7"+
+    "\1\10\1\11\1\12\1\13\1\14\1\15\1\16\1\17"+
+    "\1\20\1\21\1\22\1\23\1\24\1\25\1\26\1\27"+
+    "\1\30\1\31\2\32\1\33\1\34\1\35\1\36\1\37"+
+    "\1\40\1\41\1\42\1\43\1\44\1\0\1\45\1\0"+
+    "\1\46\3\0\1\32\1\45\2\47\1\50\1\0\1\32"+
+    "\2\0\1\51\1\0\1\47";
 
   private static int [] zzUnpackAction() {
-    int [] result = new int[42];
+    int [] result = new int[57];
     int offset = 0;
     offset = zzUnpackAction(ZZ_ACTION_PACKED_0, offset, result);
     return result;
@@ -130,15 +132,17 @@ public class Lexer implements java_cup.runtime.Scanner {
   private static final int [] ZZ_ROWMAP = zzUnpackRowMap();
 
   private static final String ZZ_ROWMAP_PACKED_0 =
-    "\0\0\0\42\0\42\0\104\0\42\0\42\0\42\0\42"+
-    "\0\42\0\146\0\42\0\210\0\252\0\42\0\42\0\314"+
-    "\0\42\0\356\0\u0110\0\42\0\42\0\42\0\42\0\104"+
-    "\0\42\0\u0132\0\42\0\u0154\0\u0176\0\u0198\0\u01ba\0\104"+
-    "\0\42\0\u01dc\0\u0176\0\u01fe\0\u0220\0\u0242\0\u0264\0\356"+
-    "\0\u0286\0\u0286";
+    "\0\0\0\55\0\55\0\55\0\132\0\55\0\55\0\55"+
+    "\0\55\0\55\0\55\0\55\0\55\0\55\0\55\0\207"+
+    "\0\55\0\264\0\341\0\55\0\55\0\u010e\0\55\0\55"+
+    "\0\55\0\55\0\u013b\0\u0168\0\55\0\55\0\55\0\55"+
+    "\0\55\0\55\0\55\0\55\0\55\0\55\0\132\0\55"+
+    "\0\u0195\0\55\0\u01c2\0\u01ef\0\u021c\0\u0249\0\132\0\55"+
+    "\0\u0276\0\u01ef\0\u02a3\0\u02d0\0\u02fd\0\u032a\0\u013b\0\u0357"+
+    "\0\u0357";
 
   private static int [] zzUnpackRowMap() {
-    int [] result = new int[42];
+    int [] result = new int[57];
     int offset = 0;
     offset = zzUnpackRowMap(ZZ_ROWMAP_PACKED_0, offset, result);
     return result;
@@ -161,24 +165,26 @@ public class Lexer implements java_cup.runtime.Scanner {
   private static final int [] ZZ_TRANS = zzUnpacktrans();
 
   private static final String ZZ_TRANS_PACKED_0 =
-    "\1\2\2\3\1\0\3\3\1\2\1\4\1\5\1\6"+
-    "\1\7\1\10\1\11\1\12\1\13\1\14\1\15\1\16"+
-    "\1\17\1\20\1\2\1\21\1\22\1\23\3\22\2\2"+
-    "\1\24\1\25\1\26\1\27\42\0\2\30\1\0\5\30"+
-    "\1\31\23\30\1\32\5\30\25\0\1\33\34\0\1\34"+
-    "\40\0\1\35\1\0\1\15\27\0\1\36\53\0\1\22"+
-    "\5\0\5\22\1\0\1\22\25\0\1\22\5\0\4\22"+
-    "\1\37\1\0\1\22\4\0\2\30\1\0\5\30\1\40"+
-    "\23\30\1\32\5\30\2\34\1\41\2\0\1\42\34\34"+
-    "\6\0\1\43\12\0\1\43\15\0\1\43\2\0\7\36"+
-    "\1\44\32\36\21\0\1\22\5\0\3\22\1\45\1\22"+
-    "\1\0\1\22\6\0\1\41\37\0\7\46\1\47\15\46"+
-    "\1\41\14\46\21\0\1\22\5\0\2\22\1\50\2\22"+
-    "\1\0\1\22\4\0\7\36\1\44\15\36\1\51\23\36"+
-    "\1\44\15\36\1\52\14\36\25\0\1\46\14\0";
+    "\1\2\2\3\1\0\3\3\1\4\1\5\1\6\1\7"+
+    "\1\10\1\11\1\12\1\13\1\14\1\15\1\16\1\17"+
+    "\1\20\1\21\1\22\1\23\1\24\1\25\1\26\1\27"+
+    "\1\30\1\31\1\32\1\33\1\34\3\33\1\35\1\36"+
+    "\1\37\1\40\1\41\1\42\1\43\1\44\1\45\1\46"+
+    "\55\0\2\47\1\0\5\47\1\50\33\47\1\51\10\47"+
+    "\33\0\1\52\46\0\1\53\53\0\1\54\1\0\1\23"+
+    "\35\0\1\55\73\0\1\33\7\0\5\33\4\0\1\33"+
+    "\33\0\1\33\7\0\4\33\1\56\4\0\1\33\5\0"+
+    "\2\47\1\0\5\47\1\57\33\47\1\51\10\47\2\53"+
+    "\1\60\2\0\1\61\47\53\6\0\1\62\17\0\1\62"+
+    "\23\0\1\62\2\0\7\55\1\63\45\55\26\0\1\33"+
+    "\7\0\3\33\1\64\1\33\4\0\1\33\7\0\1\60"+
+    "\52\0\7\65\1\66\23\65\1\60\21\65\26\0\1\33"+
+    "\7\0\2\33\1\67\2\33\4\0\1\33\5\0\7\55"+
+    "\1\63\23\55\1\70\30\55\1\63\23\55\1\71\21\55"+
+    "\33\0\1\65\21\0";
 
   private static int [] zzUnpacktrans() {
-    int [] result = new int[680];
+    int [] result = new int[900];
     int offset = 0;
     offset = zzUnpacktrans(ZZ_TRANS_PACKED_0, offset, result);
     return result;
@@ -221,13 +227,13 @@ public class Lexer implements java_cup.runtime.Scanner {
   private static final int [] ZZ_ATTRIBUTE = zzUnpackAttribute();
 
   private static final String ZZ_ATTRIBUTE_PACKED_0 =
-    "\1\0\2\11\1\1\5\11\1\1\1\11\2\1\2\11"+
-    "\1\1\1\11\2\1\4\11\1\0\1\11\1\0\1\11"+
+    "\1\0\3\11\1\1\12\11\1\1\1\11\2\1\2\11"+
+    "\1\1\4\11\2\1\12\11\1\0\1\11\1\0\1\11"+
     "\3\0\2\1\1\11\2\1\1\0\1\1\2\0\1\1"+
     "\1\0\1\1";
 
   private static int [] zzUnpackAttribute() {
-    int [] result = new int[42];
+    int [] result = new int[57];
     int offset = 0;
     offset = zzUnpackAttribute(ZZ_ATTRIBUTE_PACKED_0, offset, result);
     return result;
@@ -734,143 +740,245 @@ public class Lexer implements java_cup.runtime.Scanner {
             { System.out.println("Error Lexico: " + yytext() + " | Fila:" + yyline + " | Columna: " + yycolumn);
             }
           // fall through
-          case 25: break;
+          case 42: break;
           case 2:
             { /* Espacios en blanco se ignoran */
             }
           // fall through
-          case 26: break;
+          case 43: break;
           case 3:
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo !",yyline,yycolumn));
+        return new Symbol(sym.DISTINTO,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 44: break;
+          case 4:
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo \"",yyline,yycolumn));
+        return new Symbol(sym.COMILLAD,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 45: break;
+          case 5:
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo #",yyline,yycolumn));
+        return new Symbol(sym.NUMERAL,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 46: break;
+          case 6:
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo $",yyline,yycolumn));
+        return new Symbol(sym.DOLAR,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 47: break;
+          case 7:
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo %",yyline,yycolumn));
+        return new Symbol(sym.PORCENTAJE,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 48: break;
+          case 8:
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo &",yyline,yycolumn));
+        return new Symbol(sym.AMPERSAND,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 49: break;
+          case 9:
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo '",yyline,yycolumn));
+        return new Symbol(sym.COMILLAS,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 50: break;
+          case 10:
             { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo (",yyline,yycolumn));
         return new Symbol(sym.PARIZQ,yycolumn,yyline, yytext());
             }
           // fall through
-          case 27: break;
-          case 4:
+          case 51: break;
+          case 11:
             { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo )",yyline,yycolumn));
         return new Symbol(sym.PARDER,yycolumn,yyline, yytext());
             }
           // fall through
-          case 28: break;
-          case 5:
+          case 52: break;
+          case 12:
             { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo *",yyline,yycolumn));
         return new Symbol(sym.CEROOMAS,yycolumn,yyline, yytext());
             }
           // fall through
-          case 29: break;
-          case 6:
+          case 53: break;
+          case 13:
             { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo +",yyline,yycolumn));
         return new Symbol(sym.UNOOMAS,yycolumn,yyline, yytext());
             }
           // fall through
-          case 30: break;
-          case 7:
+          case 54: break;
+          case 14:
             { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo ,",yyline,yycolumn));
         return new Symbol(sym.COMA,yycolumn,yyline, yytext());
             }
           // fall through
-          case 31: break;
-          case 8:
+          case 55: break;
+          case 15:
             { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo -",yyline,yycolumn));
         return new Symbol(sym.GUION,yycolumn,yyline, yytext());
             }
           // fall through
-          case 32: break;
-          case 9:
+          case 56: break;
+          case 16:
             { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo .",yyline,yycolumn));
         return new Symbol(sym.CONCA,yycolumn,yyline, yytext());
             }
           // fall through
-          case 33: break;
-          case 10:
+          case 57: break;
+          case 17:
             { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo /",yyline,yycolumn));
         return new Symbol(sym.BARRA,yycolumn,yyline, yytext());
             }
           // fall through
-          case 34: break;
-          case 11:
+          case 58: break;
+          case 18:
             { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Digito",yyline,yycolumn));
             return new Symbol(sym.ENTERO, yycolumn, yyline, yytext());
             }
           // fall through
-          case 35: break;
-          case 12:
+          case 59: break;
+          case 19:
             { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo :",yyline,yycolumn));
         return new Symbol(sym.DOSPUNTOS,yycolumn,yyline, yytext());
             }
           // fall through
-          case 36: break;
-          case 13:
+          case 60: break;
+          case 20:
             { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo ;",yyline,yycolumn));
         return new Symbol(sym.PTOCOMA,yycolumn,yyline, yytext());
             }
           // fall through
-          case 37: break;
-          case 14:
+          case 61: break;
+          case 21:
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo <",yyline,yycolumn));
+        return new Symbol(sym.MENOR,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 62: break;
+          case 22:
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo =",yyline,yycolumn));
+        return new Symbol(sym.IGUAL,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 63: break;
+          case 23:
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo >",yyline,yycolumn));
+        return new Symbol(sym.MAYOR,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 64: break;
+          case 24:
             { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo ?",yyline,yycolumn));
         return new Symbol(sym.CEROOUNA,yycolumn,yyline, yytext());
             }
           // fall through
-          case 38: break;
-          case 15:
+          case 65: break;
+          case 25:
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo @",yyline,yycolumn));
+        return new Symbol(sym.ARROBA,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 66: break;
+          case 26:
             { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Identificador",yyline,yycolumn));
             return new Symbol(sym.IDENTI,yycolumn,yyline, yytext());
             }
           // fall through
-          case 39: break;
-          case 16:
+          case 67: break;
+          case 27:
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo [",yyline,yycolumn));
+        return new Symbol(sym.CORIZQ,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 68: break;
+          case 28:
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo \\",yyline,yycolumn));
+        return new Symbol(sym.BARRAINV,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 69: break;
+          case 29:
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo ]",yyline,yycolumn));
+        return new Symbol(sym.CORDER,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 70: break;
+          case 30:
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo ^",yyline,yycolumn));
+        return new Symbol(sym.ELEVADO,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 71: break;
+          case 31:
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo _",yyline,yycolumn));
+        return new Symbol(sym.GUIONBAJO,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 72: break;
+          case 32:
+            { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo `",yyline,yycolumn));
+        return new Symbol(sym.ACENTO,yycolumn,yyline, yytext());
+            }
+          // fall through
+          case 73: break;
+          case 33:
             { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo {",yyline,yycolumn));
         return new Symbol(sym.LLAVEIZQ,yycolumn,yyline, yytext());
             }
           // fall through
-          case 40: break;
-          case 17:
+          case 74: break;
+          case 34:
             { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo |",yyline,yycolumn));
         return new Symbol(sym.DISYUNCION,yycolumn,yyline, yytext());
             }
           // fall through
-          case 41: break;
-          case 18:
+          case 75: break;
+          case 35:
             { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo }",yyline,yycolumn));
         return new Symbol(sym.LLAVEDER,yycolumn,yyline, yytext());
             }
           // fall through
-          case 42: break;
-          case 19:
+          case 76: break;
+          case 36:
             { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo ~",yyline,yycolumn));
         return new Symbol(sym.TILDE,yycolumn,yyline, yytext());
             }
           // fall through
-          case 43: break;
-          case 20:
+          case 77: break;
+          case 37:
             { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Cadena",yyline,yycolumn));
                         return new Symbol(sym.CADENA,yycolumn,yyline, yytext());
             }
           // fall through
-          case 44: break;
-          case 21:
+          case 78: break;
+          case 38:
             { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo ->",yyline,yycolumn));
         return new Symbol(sym.FLECHA,yycolumn,yyline, yytext());
             }
           // fall through
-          case 45: break;
-          case 22:
+          case 79: break;
+          case 39:
             { System.out.println(yytext());
             }
           // fall through
-          case 46: break;
-          case 23:
+          case 80: break;
+          case 40:
             { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Decimal",yyline,yycolumn));
             return new Symbol(sym.DECIMAL,yycolumn,yyline, yytext());
             }
           // fall through
-          case 47: break;
-          case 24:
+          case 81: break;
+          case 41:
             { Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Palabra res CONJ",yyline,yycolumn));    
         return new Symbol(sym.RCONJ,yycolumn,yyline, yytext());
             }
           // fall through
-          case 48: break;
+          case 82: break;
           default:
             zzScanError(ZZ_NO_MATCH);
         }

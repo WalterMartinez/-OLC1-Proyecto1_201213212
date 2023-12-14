@@ -76,7 +76,61 @@ CADENACOMILLASDOBLES = [\"]([^\"\n]|(\\\"))*[\"]
 "/"     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo /",yyline,yycolumn));
         return new Symbol(sym.BARRA,yycolumn,yyline, yytext());}
 
+"!"     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo !",yyline,yycolumn));
+        return new Symbol(sym.DISTINTO,yycolumn,yyline, yytext());}
 
+"\""     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo \"",yyline,yycolumn));
+        return new Symbol(sym.COMILLAD,yycolumn,yyline, yytext());}
+
+"#"     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo #",yyline,yycolumn));
+        return new Symbol(sym.NUMERAL,yycolumn,yyline, yytext());}
+
+"$"     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo $",yyline,yycolumn));
+        return new Symbol(sym.DOLAR,yycolumn,yyline, yytext());}
+
+"%"     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo %",yyline,yycolumn));
+        return new Symbol(sym.PORCENTAJE,yycolumn,yyline, yytext());}
+
+"&"     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo &",yyline,yycolumn));
+        return new Symbol(sym.AMPERSAND,yycolumn,yyline, yytext());}
+
+"'"     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo '",yyline,yycolumn));
+        return new Symbol(sym.COMILLAS,yycolumn,yyline, yytext());}
+
+
+
+"<"     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo <",yyline,yycolumn));
+        return new Symbol(sym.MENOR,yycolumn,yyline, yytext());}
+
+">"     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo >",yyline,yycolumn));
+        return new Symbol(sym.MAYOR,yycolumn,yyline, yytext());}
+
+"="     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo =",yyline,yycolumn));
+        return new Symbol(sym.IGUAL,yycolumn,yyline, yytext());}
+
+"@"     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo @",yyline,yycolumn));
+        return new Symbol(sym.ARROBA,yycolumn,yyline, yytext());}
+
+"["     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo [",yyline,yycolumn));
+        return new Symbol(sym.CORIZQ,yycolumn,yyline, yytext());}
+
+"]"     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo ]",yyline,yycolumn));
+        return new Symbol(sym.CORDER,yycolumn,yyline, yytext());}
+
+
+
+
+"^"     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo ^",yyline,yycolumn));
+        return new Symbol(sym.ELEVADO,yycolumn,yyline, yytext());}
+
+"_"     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo _",yyline,yycolumn));
+        return new Symbol(sym.GUIONBAJO,yycolumn,yyline, yytext());}
+
+"`"     {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo `",yyline,yycolumn));
+        return new Symbol(sym.ACENTO,yycolumn,yyline, yytext());}
+
+"\\"    {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Simbolo \\",yyline,yycolumn));
+        return new Symbol(sym.BARRAINV,yycolumn,yyline, yytext());}
 
 
 {IDENTI}    {Utilidades.Itokens.listatokens.add(new Utilidades.rtokens(yytext(),"Identificador",yyline,yycolumn));

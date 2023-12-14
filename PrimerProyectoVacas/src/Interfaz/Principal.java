@@ -19,6 +19,8 @@ public class Principal extends javax.swing.JFrame {
     /**
      * Creates new form Principal
      */
+    
+    public static String textoaanalizar = "";
     private Files fs;
     public Principal() {
         initComponents();
@@ -207,9 +209,13 @@ public class Principal extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        Funcion.imprimirlista();
-                
-                
+        //Funcion.imprimirlista();
+        textoaanalizar = jTextArea1.getText();        
+        Funcion.analizar1(textoaanalizar);        
+        
+        for (int i=0; i< Utilidades.Itokens.listatokens.size(); i++){
+            System.out.println(Utilidades.Itokens.listatokens.get(i));
+        }
                 
                 
     }//GEN-LAST:event_jButton1ActionPerformed

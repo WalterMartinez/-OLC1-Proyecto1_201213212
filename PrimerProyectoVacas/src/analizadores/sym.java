@@ -8,29 +8,46 @@ package analizadores;
 /** CUP generated class containing symbol constants. */
 public class sym {
   /* terminals */
-  public static final int GUION = 21;
   public static final int DOSPUNTOS = 7;
-  public static final int CADENA = 5;
-  public static final int IDENTI = 3;
-  public static final int DECIMAL = 4;
-  public static final int RCONJ = 6;
-  public static final int PARIZQ = 18;
-  public static final int BARRA = 22;
-  public static final int FLECHA = 8;
-  public static final int PARDER = 17;
-  public static final int CEROOMAS = 14;
-  public static final int TILDE = 11;
-  public static final int LLAVEIZQ = 20;
-  public static final int COMA = 10;
-  public static final int LLAVEDER = 19;
-  public static final int EOF = 0;
-  public static final int CEROOUNA = 16;
-  public static final int DISYUNCION = 13;
-  public static final int CONCA = 12;
-  public static final int error = 1;
-  public static final int PTOCOMA = 9;
+  public static final int DISTINTO = 23;
+  public static final int BARRAINV = 39;
+  public static final int GUIONBAJO = 37;
   public static final int ENTERO = 2;
+  public static final int IDENTI = 3;
+  public static final int LLAVEDER = 19;
+  public static final int PORCENTAJE = 27;
+  public static final int ACENTO = 38;
+  public static final int ELEVADO = 36;
+  public static final int TILDE = 11;
   public static final int UNOOMAS = 15;
+  public static final int IGUAL = 32;
+  public static final int CORDER = 35;
+  public static final int ARROBA = 33;
+  public static final int GUION = 21;
+  public static final int AMPERSAND = 28;
+  public static final int PTOCOMA = 9;
+  public static final int EOF = 0;
+  public static final int PARIZQ = 18;
+  public static final int DECIMAL = 4;
+  public static final int CONCA = 12;
+  public static final int COMILLAS = 29;
+  public static final int error = 1;
+  public static final int COMA = 10;
+  public static final int CEROOMAS = 14;
+  public static final int CADENA = 5;
+  public static final int CEROOUNA = 16;
+  public static final int MENOR = 30;
+  public static final int MAYOR = 31;
+  public static final int COMILLAD = 24;
+  public static final int BARRA = 22;
+  public static final int RCONJ = 6;
+  public static final int FLECHA = 8;
+  public static final int LLAVEIZQ = 20;
+  public static final int NUMERAL = 25;
+  public static final int DISYUNCION = 13;
+  public static final int PARDER = 17;
+  public static final int CORIZQ = 34;
+  public static final int DOLAR = 26;
   public static final String[] terminalNames = new String[] {
   "EOF",
   "error",
@@ -54,7 +71,24 @@ public class sym {
   "LLAVEDER",
   "LLAVEIZQ",
   "GUION",
-  "BARRA"
+  "BARRA",
+  "DISTINTO",
+  "COMILLAD",
+  "NUMERAL",
+  "DOLAR",
+  "PORCENTAJE",
+  "AMPERSAND",
+  "COMILLAS",
+  "MENOR",
+  "MAYOR",
+  "IGUAL",
+  "ARROBA",
+  "CORIZQ",
+  "CORDER",
+  "ELEVADO",
+  "GUIONBAJO",
+  "ACENTO",
+  "BARRAINV"
   };
 }
 

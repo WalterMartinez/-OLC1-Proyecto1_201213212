@@ -23,7 +23,7 @@ public class Main {
         // TODO code application logic here
         //func.Funcion.mostrar("hola mundo");
         
-        analizadores("src/analizadores/", "Lexer.jflex", "Parser.cup");
+        //analizadores("src/analizadores/", "Lexer.jflex", "Parser.cup");
         
         Principal p = new Principal();
         p.setVisible(true);

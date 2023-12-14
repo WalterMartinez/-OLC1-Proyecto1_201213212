@@ -13,12 +13,12 @@ parser code
 
     public void syntax_error(Symbol s)
     {
-            System.err.println("Error Sintactico: "+ s.value + " - Fila: " + s.right + " - Columna: " + s.left + ". Recuperado" );
+            System.err.println("Error Sintactico: ------>"+ s.value + "<------ Fila: " + s.right + " - Columna: " + s.left + ". Recuperado" );
     }
 
     public void unrecovered_syntax_error(Symbol s) throws java.lang.Exception
     {
-            System.err.println("Error Sintactico: "+ s.value + " - Fila: " + s.right + " - Columna: " + s.left + ". Sin recuperacion." );
+            System.err.println("Error Sintactico: -------->"+ s.value + "<-------- Fila: " + s.right + " - Columna: " + s.left + ". Sin recuperacion." );
     }
 
 :}
@@ -36,13 +36,18 @@ terminal String DOSPUNTOS, FLECHA, PTOCOMA, COMA;
 terminal String TILDE, CONCA, DISYUNCION, CEROOMAS, UNOOMAS, CEROOUNA;
 terminal String PARDER, PARIZQ, LLAVEDER, LLAVEIZQ;
 terminal String GUION, BARRA;
-
+terminal String DISTINTO,COMILLAD, NUMERAL, DOLAR, PORCENTAJE, AMPERSAND,COMILLAS;
+terminal String MENOR, MAYOR, IGUAL, ARROBA, CORIZQ, CORDER;
+terminal String ELEVADO, GUIONBAJO, ACENTO, BARRAINV; 
 
 
 //------> Declaración de no terminales
 non terminal inicio;
 non terminal contenido;
 non terminal sentencias, declaracion, conjunto, varconj, varcomauno, varcomados, exregular;
+non terminal varcomatres, simbolo;
+non terminal regular, expresion;
+
 
 //------> Definir Simbolo Inicial
 start with inicio; 
@@ -69,8 +74,10 @@ conjunto ::=    RCONJ DOSPUNTOS IDENTI FLECHA varconj PTOCOMA
 
 varconj ::= IDENTI TILDE IDENTI
             |ENTERO GUION ENTERO
+            |simbolo TILDE simbolo
             | varcomauno
             | varcomados
+            | varcomatres
 ;
 
 varcomauno ::=  varcomauno COMA IDENTI
@@ -81,3 +88,66 @@ varcomados ::=  varcomados COMA ENTERO
                 |ENTERO
 ;
 
+varcomatres ::= varcomatres COMA simbolo
+                |simbolo
+;
+
+simbolo ::=     DISTINTO
+                |COMILLAD
+                |NUMERAL
+                |DOLAR
+                |PORCENTAJE
+                |AMPERSAND
+                |COMILLAS
+                |PARIZQ
+                |PARDER
+                |CEROOUNA
+                |UNOOMAS
+                |COMA
+                |GUION
+                |CONCA
+                |BARRA
+                |DOSPUNTOS
+                |PTOCOMA
+                |MENOR
+                |MAYOR
+                |IGUAL
+                |CEROOMAS
+                |ARROBA
+                |CORIZQ
+                |CORDER
+                |BARRAINV
+                |ELEVADO
+                |GUIONBAJO
+                |ACENTO
+                |LLAVEIZQ
+                |LLAVEDER
+                |DISYUNCION
+                
+;
+
+exregular ::=   IDENTI FLECHA regular PTOCOMA
+;
+
+regular ::=     regular expresion
+                |CEROOUNA
+                |UNOOMAS
+                |CONCA
+                |DISYUNCION
+                |PARIZQ IDENTI PARDER
+                |CADENA
+                |GUIONBAJO
+                |CEROOMAS
+                |IDENTI
+;
+
+expresion ::=   CEROOUNA
+                |UNOOMAS
+                |CONCA
+                |DISYUNCION
+                |PARIZQ IDENTI PARDER
+                |CADENA
+                |GUIONBAJO
+                |CEROOMAS
+                |IDENTI
+;                
