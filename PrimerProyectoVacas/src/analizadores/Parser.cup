@@ -126,28 +126,28 @@ simbolo ::=     DISTINTO
                 
 ;
 
-exregular ::=   IDENTI FLECHA regular PTOCOMA
+exregular ::=   IDENTI FLECHA regular:a PTOCOMA     {:System.out.println("el valor de la expresion es: "+ a);:}
 ;
 
-regular ::=     regular expresion
-                |CEROOUNA
-                |UNOOMAS
-                |CONCA
-                |DISYUNCION
-                |PARIZQ IDENTI PARDER
-                |CADENA
-                |GUIONBAJO
-                |CEROOMAS
-                |IDENTI
+regular ::=     regular:b expresion:a               {: RESULT = b.toString() + a.toString(); :}         
+                |CEROOUNA:val                   {: RESULT = val.toString(); :}
+                |UNOOMAS:val                    {: RESULT = val.toString(); :}
+                |CONCA:val                      {: RESULT = val.toString(); :}
+                |DISYUNCION:val                 {: RESULT = val.toString(); :}
+                |PARIZQ IDENTI:val PARDER       {: RESULT = "("+val.toString()+")"; :}
+                |CADENA:val                     {: RESULT = val.toString(); :}
+                |GUIONBAJO:val                  {: RESULT = val.toString(); :}
+                |CEROOMAS:val                   {: RESULT = val.toString(); :}
+                |IDENTI:val                     {: RESULT = val.toString(); :}
 ;
 
-expresion ::=   CEROOUNA
-                |UNOOMAS
-                |CONCA
-                |DISYUNCION
-                |PARIZQ IDENTI PARDER
-                |CADENA
-                |GUIONBAJO
-                |CEROOMAS
-                |IDENTI
+expresion ::=   CEROOUNA:val                    {: RESULT = val.toString(); :}
+                |UNOOMAS:val                    {: RESULT = val.toString(); :} 
+                |CONCA:val                      {: RESULT = val.toString(); :}
+                |DISYUNCION:val                 {: RESULT = val.toString(); :}
+                |PARIZQ IDENTI:val PARDER       {: RESULT = "("+val.toString()+")"; :}
+                |CADENA:val                     {: RESULT = val.toString(); :}
+                |GUIONBAJO:val                  {: RESULT = val.toString(); :}
+                |CEROOMAS:val                   {: RESULT = val.toString(); :}
+                |IDENTI:val                     {: RESULT = val.toString(); :}
 ;                

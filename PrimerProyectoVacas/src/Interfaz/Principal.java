@@ -212,7 +212,7 @@ public class Principal extends javax.swing.JFrame {
         //Funcion.imprimirlista();
         textoaanalizar = jTextArea1.getText();        
         Funcion.analizar1(textoaanalizar);        
-        
+        System.out.println("-----------------------------------------------------------------------------------------------------------");
         for (int i=0; i< Utilidades.Itokens.listatokens.size(); i++){
             System.out.println(Utilidades.Itokens.listatokens.get(i));
         }
